@@ -1,3 +1,17 @@
 a {
 	color:blue;
 }
+
+a.bottom {
+	align:center;
+}
+
+h1 {
+	text-align:center;
+}
+
+p {
+	text-indent: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
