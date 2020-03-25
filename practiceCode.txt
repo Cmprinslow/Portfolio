@@ -40,3 +40,61 @@ for (var i = 1; i <= 8; i++){
   }
 }
 console.log(output);
+
+// min
+function min(val1, val2){
+ if(val1 < val2){
+   return val1;
+ }else{
+  return val2;
+ }
+}
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
+
+// recursion example
+// Your code here.
+function isEven(val){
+ if (val == 0){
+   return true;
+ }else if (val == 1){
+   return false;
+ }else{
+   return isEven(val - 2);
+ }
+}
+
+console.log(isEven(50));
+// → true
+console.log(isEven(75));
+// → false
+console.log(isEven(-1));
+// → ??
+
+// Count characters
+function countBs(val){
+  var count = 0
+  for(var i = 0; i < val.length; i++){
+   if(val[i] === "B"){
+     count++;
+   }
+  }
+  return count;
+}
+
+function countChar(val, char){
+  var count = 0
+  for(var i = 0; i < val.length; i++){
+   if(val[i] === char){
+     count++;
+   }
+  }
+  return count;
+}
+
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
